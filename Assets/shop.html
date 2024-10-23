@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEK CONSULTS | Innovative Engineering Solutions | Civil Engineering | Electrical Engineering | Project Management | Software Development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="../Assets/image/logo/log.png">
+</head>
+<body>
+
+    <style>
+            .category-list {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .map-image {
+                width: auto;
+                height: 600px;
+                object-fit:fill ;
+                border-radius: 8px; /* Adjust the border radius if you want rounded corners */
+            }
+            .carousel-item img {
+            max-height: 500px; /* Adjust the height as per your need */
+            object-fit: cover;
+            }
+
+            .carousel-caption {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            }
+
+    </style>
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img id="logo" src="../Assets/image/web/logo/New folder/logo.webp" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link"  href="../Assets/home.html">Home</a>
+            </li>
+            <!--Dropdown About-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../Assets/about.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                    About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../Assets/about.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="../Assets/history.html">Our History</a></li>
+                  <li><a class="dropdown-item" href="../Assets/team.html">Our Team</a></li>
+                </ul>
+            </li>
+
+              <!--Dropdown Services-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../Assets/service.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../Assets/service.html#it-training">IT Training</a></li>
+                  <li><a class="dropdown-item" href="../Assets/service.html#renewable-energy">Renewable Energy</a></li>
+                  <li><a class="dropdown-item" href="../Assets/service.html#electrical-automations">Electronic Automations</a></li>
+                  <li><a class="dropdown-item" href="../Assets/service.html#project-management">Project Management</a></li>
+                  <li><a class="dropdown-item" href="../Assets/service.html#training-mentorship">Training And Mentorship</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Assets/project.html">Projects</a>
+            </li>              
+            <!--Dropdown for products-->
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle desktop-only-tab" href="../Assets/shop.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/about.html">Electricals</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/history.html">Solar Installations</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/team.html">Lighting</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/team.html">Hardware</a></li>
+                </ul>
+              </li>                                       
+          
+        </ul>
+        
+        <a href="contact.html" class="btn btn-brand ms-ld-3">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!--HERO-->
+  <!--Small Carousel-->
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Assets/SHOP/shop.jpg" class="d-block w-100" alt="Product 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>EEK Consults And ELectricals</h2>
+          <p>Shop With Us</p>
+          <a href="#" class="btn btn-primary">Browse Through Our Products</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Assets/SHOP/shp.jpg" class="d-block w-100" alt="Product 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>EEK Consults And ELectricals</h2>
+          <p>Shop With Us</p>
+          <a href="#" class="btn btn-primary">Browse Through Our Products</a>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+
+<!--PRODUCTS-->
+<div class="products-section">
+  <div class="category-list col-md-4 col-sm-6 col-12">
+      <h3>Category</h3>
+                <ul>
+                    <li>Electricals</li>
+                    <li>Solar Panels</li>
+                    <li>Hardware For Home Improvement</li>
+                    <li>Lighting</li>
+                    <li>Chandeliers</li>
+                </ul>
+      <img src="../Assets/image/map.copy.png" alt="Map" class="map-image">
+  </div>
+  <div class="products-display">
+      <h3>Electrical Products</h3>
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option>Popularity</option>
+                            <option>Price Low to High</option>
+                            <option>Price High to Low</option>
+                        </select>
+                    </div>
+      <div class="product-items">
+
+            <!-- Product 1 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang1.jpg" alt="">
+                        <h5>1 Gang Switch</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 2 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang2.jpg" alt="">
+                        <h5>2 Gang Switch</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 3 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang3.jpg" alt="">
+                        <h5>3 Gang Switch</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 4 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang4.jpg" alt="">
+                        <h5>4 Gang Switch</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 5 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang5.jpg" alt="">
+                        <h5>Door Bell</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 6 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang6.jpg" alt="">
+                        <h5>Single Socket</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 7 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang7.jpg" alt="">
+                        <h5>Single Socket with USB</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 8 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang8.jpg" alt="">
+                        <h5>Air condition Switch</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 9 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Gang9.png" alt="">
+                        <h5>TV Socket</h5><sub></sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 9 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/d socket.jpeg" alt="">
+                        <h5>Double Socket</h5><sub> All Colours</sub>         
+                    </div>
+                
+            </div>
+
+            <!-- Product 10 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/avs.jpg" alt="AVS 30">
+                        <h5>AVS 30 </h5><sub> AUTOMATIC VOLTAGE SWITCHER</sub></h5>
+                    </div>        
+                
+            </div>
+
+            <!-- Product 10 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/Havells.jpg" alt="AVS 30">
+                        <h5>Main Switch </h5><sub>Single Phase. 3 Way,4 Way</sub></h5>
+                    </div>        
+                
+            </div>
+            
+            <!-- Product 11 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/f_guard.jpg" alt="">
+                        <h5>Fridge Guard</h5><sub>VOLTAGE PROTECTION</sub> 
+                    </div>        
+                
+            </div>
+
+            <!-- Product 11 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/3pin.jpg" alt="">
+                        <h5>Plug</h5><sub>VOLTAGE PROTECTION</sub> 
+                    </div>        
+                
+            </div>
+
+            <!-- Product 11 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/multi.jpg" alt="">
+                        <h5>MULTI-SOCKET</h5><sub>VOLTAGE PROTECTION</sub> 
+                    </div>        
+                
+            </div>
+
+            <!-- Product 11 -->
+            <div class="row">
+                
+                    <div class="product">
+                        <img src="../Assets/SHOP/Electricals/3phase.jpg" alt="">
+                        <h5>Main Switch </h5><sub>3 Phase. 3 Way,4 Way etc</sub></h5>
+                    </div>        
+                
+            </div>
+ 
+      </div>
+  </div>
+</div>
+
+    <!--Small Carousel-->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../Assets/SHOP/Lights/Chan8.jpeg" class="d-block w-100" alt="Product 1">
+        </div>
+        <div class="carousel-item">
+            <img src="../Assets/SHOP/Lights/Chan9.jpeg" class="d-block w-100" alt="Product 1">
+        </div>
+        <div class="carousel-item">
+            <img src="../Assets/SHOP/Lights/Chan6.jpeg" class="d-block w-100" alt="Product 2">
+            </div>
+        </div>
+        <!-- Add more carousel items as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+<!--LIGHTS-->
+<div id="lighting" class="products-display">
+    <h3>Lighting</h3>
+    <div class="sort-options">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option>Popularity</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+        </select>
+    </div>
+
+    <div class="product-items">
+       
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light1.jpg" alt="Ctorch 5W">
+            <h5>CTorch 10W</h5><sub>LED SCREW BULB</sub>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+        <img src="../Assets/SHOP/Lights/Light2.jpg" alt="">
+        <h5>CTorch 12W</h5><sub>LED PANEL LIGHT</sub>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+        <img src="../Assets/SHOP/Lights/Light3.jpg" alt="">
+        <h5>CTorch 24W</h5><sub>LED PIN BULB</sub>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light4.jpg" alt="">
+            <h5>CTorch 12W</h5><sub>LED PANEL LIGHT</sub>    
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light5.jpg" alt="">
+            <h5>CTorch 5W</h5><sub>LED DOWNLIGHT</sub>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light6.jpg" alt="">
+            <h5>CTorch 9W</h5><sub>LED ROTATABLE DOWNLIGHT</sub>    
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light7.jpg" alt="">
+            <h5>CTorch 6W</h5><sub>LED PANEL LIGHT</sub>         
+        </div>
+
+        <!-- Product 28 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light8.jpg" alt="">
+            <h5>CTorch 7W</h5><sub>LED GLASS PANEL LIGHT</sub>         
+        </div>
+
+        <!-- Product 29 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light9.jpg" alt="">
+            <h5>CTorch 24W</h5><sub>LED PANEL LIGHT</sub>         
+        </div>
+
+        <!-- Product 30 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light10.jpg" alt="">
+            <h5>CTorch 20W</h5><sub>LED FLOOD LIGHT</sub>         
+        </div>
+
+        <!-- Product 31 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Light11.jpg" alt="">
+            <h5>5W</h5><sub>LED PANEL LIGHT</sub>         
+        </div>
+
+        <!-- Product 21 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan1.jpg" alt="Ctorch 5W">
+            <h5>CHANDELIER</h5><sub>..</sub>
+        </div>
+
+        <!-- Product 22 -->
+        <div class="product">
+        <img src="../Assets/SHOP/Lights/Chan2.jpg" alt="">
+        <h5>CHANDELIER</h5><sub>..</sub>
+        </div>
+
+        <!-- Product 23 -->
+        <div class="product">
+        <img src="../Assets/SHOP/Lights/Chan3.jpg" alt="">
+        <h5>CHANDELIER</h5><sub>..</sub>
+        </div>
+
+        <!-- Product 24 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan4.jpg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>    
+        </div>
+
+        <!-- Product 25 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan5.jpg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>
+        </div>
+
+        <!-- Product 26 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan6.jpeg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>    
+        </div>
+
+        <!-- Product 27 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan7.jpeg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 28 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan8.jpeg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 29 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan9.jpeg" alt="">
+            <h5>CHANDELIER</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 30 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall1.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 31 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall2.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 32 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall3.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 33 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall4.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 34 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall5.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall6.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/wall7.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 36 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Wall8.jpg" alt="">
+            <h5>WALL LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/hpl.jpg" alt="">
+            <h5>SPORTS LIGHT</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan10.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan11.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan14.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan15.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan16.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan17.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+
+        <!-- Product 35 -->
+        <div class="product">
+            <img src="../Assets/SHOP/Lights/Chan18.jpg" alt="">
+            <h5>CEILING LIGHTS</h5><sub>..</sub>         
+        </div>
+        
+    </div>  
+</div>   
+
+<!--HARDWARE-->
+<div id="Hardware" class="products-display">
+    <h3>Hardware Products</h3>
+    <div class="sort-options">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option>Popularity</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+        </select>
+    </div>
+
+    <div class="product-items">
+
+     <!-- Product 1 -->
+     <div class="product">
+        <img src="../Assets/SHOP/p box.jpg" alt="">
+        <h5>PVC BOX 3*3</h5><sub>FOR SOCKET AND SWITCHES</sup> 
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="../Assets/SHOP/PVC.jpg" alt="">
+      <h5>PVC BOX 3*6</h5><sub>FOR SOCKET AND SWITCHES</sup> 
+    </div>
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="../Assets/SHOP/met box.jpg" alt="">
+        <h5>Metal BOX 3*3</h5><sub>FOR SOCKET AND SWITCHES</sup> 
+      </div>
+    <!-- Product 4 -->
+    <div class="product">
+        <img src="../Assets/SHOP/metal box.jpg" alt="">
+        <h5>Metal BOX 3*6</h5><sub>FOR SOCKET AND SWITCHES</sup> 
+      </div>
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/wal nails.jpg" alt="">
+        <h5>Expand Nails</h5><sub>06mm & 08mm</sup> 
+      </div>
+    <!-- Product 6 -->
+    <div class="product">
+        <img src="../Assets/SHOP/15.png" alt="">
+        <h5>Circular Box</h5><sub></sup> 
+      </div>
+    <!-- Product 7 -->
+    <div class="product">
+        <img src="../Assets/SHOP/16.png" alt="">
+        <h5>Clips</h5><sub>FOR Earth Rod</sup> 
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/pvc pipe.jpeg" alt="">
+        <h5>PVC Pipes</h5><sub>All Types & Colours</sup> 
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/earth rod.jpeg" alt="">
+        <h5>Earth Rod</h5><sub>All Types & Lenghts</sup> 
+    </div>  
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/shovel.jpeg" alt="">
+        <h5>Shovel & Spade</h5><sub>All Types & Sizes</sup> 
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/hammer.jpeg" alt="">
+        <h5>Hammer</h5><sub>All Types & Sizes</sup> 
+    </div>
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="../Assets/SHOP/level.jpeg" alt="">
+        <h5>Spirit Level</h5><sub>All Types & Lenghts</sup> 
+    </div>
+    
+      
+    </div>
+</div> 
+
+<!--Solar Products-->
+<div id="Solar" class="products-display">
+    <h3>Solar Products</h3>
+    <div class="sort-options">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option>Popularity</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+        </select>
+    </div>
+
+    <div class="product-items">
+  
+        <!-- Product 2 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/s2.jpg" alt="">
+                    <h5> Solar Street Light</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/s3.jpg" alt="">
+                    <h5>300W Solar Light</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/s4.jpg" alt="">
+                    <h5>LED Street Light</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/sal.jpg" alt="">
+                    <h5>Solar Panels</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/in.jpeg" alt="">
+                    <h5>Invertor</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="product">
+                    <img src="../Assets/SHOP/salar P/photo.jpg" alt="">
+                    <h5>PhotoCell</h5><sub></sub>         
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer class="bg-dark">
+    <div class="footer-top">
+            <div class="container">
+                    <div class="row gy-5">
+                            
+                    </div>
+            </div>
+    </div>
+    <div class="footer-bottom ">
+            <div class="container">
+                    <div class="row g-4 jusify-content-between">
+                            <div class="col-auto">
+                                    <p class="mb-0">© Copyright EEK Consults & Electricals. All Rights Reserved</p>
+                            </div>
+                            <div class="col-auto">
+                                    <p class="mb-0">Designed By <a href="#">AIDOO</a></p>
+                            </div>
+                    </div>
+            </div>
+    </div>
+  </footer>
+
+<!--Script for dropdown-->
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseover', function() {
+            this.querySelector('.dropdown-menu').classList.add('show');
+        });
+        dropdown.addEventListener('mouseout', function() {
+            this.querySelector('.dropdown-menu').classList.remove('show');
+        });
+    });
+});
+
+/* for services*/
+
+document.addEventListener("DOMContentLoaded", function() {
+      const maxLength = 100;
+      document.querySelectorAll('.service-text').forEach(function(p) {
+          let text = p.getAttribute('data-content');
+          if (text.length > maxLength) {
+              p.textContent = text.substr(0, maxLength) + '...';
+          } else {
+              p.textContent = text;
+          }
+      });
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('mouseover', function() {
+            this.querySelector('.dropdown-menu').classList.add('show');
+        });
+        dropdown.addEventListener('mouseout', function() {
+            this.querySelector('.dropdown-menu').classList.remove('show');
+        });
+    });
+});
+
+/* for desktop mode*/
+
+  function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var desktopTab = document.querySelector(".desktop-only-tab");
+
+    // When the user clicks the tab, check if they're on a mobile device
+    if (desktopTab) {
+      desktopTab.addEventListener("click", function(event) {
+        if (isMobileDevice()) {
+          event.preventDefault(); // Prevent the tab from opening
+          
+          // Show a notification to switch to desktop mode
+          alert("This content is best viewed in desktop mode. Please switch to desktop mode on your mobile browser.");
+        }
+      });
+    }
+  });
+
+
+
+
+
+</script>
+
+    <script src="../Assets/js/test.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="../Assets/js/test.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

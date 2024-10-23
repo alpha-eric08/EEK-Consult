@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEK CONSULTS | Innovative Engineering Solutions | Civil Engineering | Electrical Engineering | Project Management | Software Development</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="../Assets/image/logo/log.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    
+    .ceo-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+    }
+
+    .ceo-profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .ceo-profile img {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .ceo-info {
+        max-width: 600px;
+        margin-left: 20px;
+    }
+
+/*CAROUSEL FOR TEAM*/
+
+.team-section {
+    background-color: #ffffff; /* Light background for the section */
+    padding: 10px 0;
+}
+
+.carousel-item {
+    text-align: center; /* Center align the text */
+    font-size: 12px; /* Set font size */
+    color: #000000; /* Dark text for readability */
+}
+
+.carousel-caption {
+    position: static; /* Use normal flow within the carousel item */
+    padding-top: 10px; /* Space above the caption */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Black background for visibility */
+    border-radius: 10%; /* Circular shape */
+}
+
+.carousel .carousel-item img {
+    width: auto; /* Adjust width to fit within columns */
+    height: 300px; /* Adjust height to fit within columns */
+    margin: auto; /* Center images horizontally */
+}
+
+.col-sm-3 {
+    padding: 3px; /* Add padding to space out images */
+}
+
+#background-section {
+    position: relative;
+    min-height: 100vh; /* Make sure the section takes up the full height of the viewport */
+    background: url('../Assets/image/web/about_us.jpg') center center / cover no-repeat;
+    background-attachment:fixed; /* This makes the image fixed while the content scrolls */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white; /* Text color for better readability over the background image */
+    text-align: center;
+}
+
+/* Content inside the section */
+#background-section .content {
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a translucent background to the text for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+  <!--NAVBAR-->
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img id="logo" src="../Assets/image/web/logo/New folder/logo.webp" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link"  href="../Assets/home.html">Home</a>
+            </li>
+            <!--Dropdown-->
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="../Assets/about.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../Assets/about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="../Assets/history.html">Our History</a></li>
+                <li><a class="dropdown-item" href="../Assets/team.html">Our Team</a></li>
+              </ul>
+          </li>
+
+              <!--Dropdown Services-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../Assets/service.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../Assets/service.html#it-training">IT Training</a></li>
+                    <li><a class="dropdown-item" href="../Assets/service.html#renewable-energy">Renewable Energy</a></li>
+                    <li><a class="dropdown-item" href="../Assets/service.html#electrical-automations">Electronic Automations</a></li>
+                    <li><a class="dropdown-item" href="../Assets/service.html#project-management">Project Management</a></li>
+                    <li><a class="dropdown-item" href="../Assets/service.html#training-mentorship">Training And Mentorship</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Assets/project.html">Projects</a>
+            </li>              
+            <!--Dropdown for products-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle desktop-only-tab" href="../Assets/shop.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                    Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/shop.html">Electricals</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/shop.html">Solar Installations</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/shop.html">Lighting</a></li>
+                    <li><a class="dropdown-item desktop-only-tab" href="../Assets/shop.html">Hardware</a></li>
+                </ul>
+              </li>                                          
+          
+        </ul>
+        
+        <a href="contact.html" class="btn btn-brand ms-ld-3">Contact Us</a>
+      </div>
+    </div>
+</nav> 
+
+<!--Scroll Over-->
+<section id="background-section">      
+</section>
+
+<!--CEO-->
+<div style="display: flex; align-items: center; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <div style="flex: 1;">
+        <img src="../Assets/image/web/Team/Ceo.jpg" alt="Profile Picture of Oliver Kornyo" style="width: 100%; border-radius: 8px;">
+        <p style="text-align: center; margin-top: 10px; font-weight: bold; font-size: 1.1em; color: #333;">Dr. Oliver Kornyo</p>
+        <p style="text-align: center; color: #777;">CEO</p>
+    </div>
+    <div style="flex: 2; padding-left: 20px;">
+        <h2 style="margin-bottom: 10px; font-size: 1.5em; color: #333;"><h5>Profile of the </h5><h2>Chief Executive Officer</h2>
+        <p style="color: #666; font-size: 1.1em; line-height: 1.5em;">
+          <strong> Dr. Oliver Kornyo </strong>is a distinguished leader and visionary in the fields of IT innovation, AMI Integration, Database Managment, Systems Security, Fraud Detection, Data Analysis and Software Development. He holds degrees in Mathematics and IT , with a field interest in renewable energy systems. With over two decades of experience in various executive roles, Dr. Kornyo has made significant contributions to the renewable energy sector, particularly in the design and implementation of high-efficiency systems for both residential and industrial applications. Under his leadership, EEK has grown to become a major player in the clean energy industry, driving numerous successful projects across multiple continents.
+        </p>
+        <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=kornyo+oliver&oq=KOrnyo+" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #d9534f; color: #fff; text-decoration: none; border-radius: 5px;">Read Profile</a>
+    </div>
+</div>
+
+<hr>
+
+<!--Deputy CEO-->
+<div style="display: flex; align-items: center; background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+    <div style="flex: 2; padding-left: 20px;">
+        <h2 style="margin-bottom: 10px; font-size: 1.5em; color: #333;"><h5>Profile of the </h5><h3>Chief Technology Officer</h3>
+        <p style="color: #666; font-size: 1.1em; line-height: 1.5em;">
+            <strong>Dr. Benjamin Tei Partey</strong> is an accomplished expert in Cybersecurity, Information Systems Security, and Digital Forensics with over a decade of experience in both academia and industry. His cutting-edge research and applied work in securing critical infrastructure and digital systems have made him a prominent figure in the field. As the Deputy CEO of EEK, Dr. Partey leads the company's efforts in integrating advanced cybersecurity solutions into its IT and energy operations, ensuring that EEK’s digital platforms and infrastructure are both secure and resilient.<br>
+            Dr. Partey holds a PhD in Information Technology, with a specialization in Cybersecurity. His contributions to the field are extensive, ranging from network security to data protection and cyber defense strategies for both private and public sector organizations.
+        </p>
+        <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=benjamin+tei+partey&btnG=" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #d9534f; color: #fff; text-decoration: none; border-radius: 5px;">Read Profile</a>
+    </div>
+    <div style="flex: 1;">
+        <img src="../Assets/image/web/Team/Mr Partey.jpg" alt="Profile Picture of Oliver Kornyo" style="width: 100%; border-radius: 8px;">
+        <p style="text-align: center; margin-top: 10px; font-weight: bold; font-size: 1.1em; color: #333;">Dr. Benjamin Tei Partey</p>
+        <p style="text-align: center; color: #777;">CTO</p>
+    </div>
+</div>
+
+
+
+<!--Board Members-->
+<style>
+    .board-members {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.board-carousel {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+.board-member {
+    flex: 0 0 200px;
+    text-align: center;
+    margin: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.board-member img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.board-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.board-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+</style>
+<div class="board-members">
+
+    <div class="row">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="section-title">
+                        <h4 class="diplay-4 fw-semibold">Top Management</h4>
+                        <div class="line"></div>
+                </div>
+        </div>
+    </div>
+
+<div class="board-carousel">
+        <div class="board-member">
+            <img src="../Assets/image/web/Team/Mad. Selena.jpg" alt="Board Member Name">
+            <h3>Mrs. Selina Owusu-Ansah</h3>
+            <p>Director HR</p>
+        </div>
+        <div class="board-member">
+            <img src="../Assets/image/web/Team/Mr Boakye.jpg" alt="Board Member Name">
+            <h3>Mr. Kofi Boakye</h3>
+            <p>Operations Manager</p>
+        </div>
+        <div class="board-member">
+            <img src="../Assets/image/web/Team/sammy.jpg" alt="Board Member Name">
+            <h3>Mr. Samuel Owusu</h3>
+            <p>Renewable Energy Engineer</p>
+        </div>
+        <div class="board-member">
+            <img src="../Assets/image/web/Team/Stephen.jpg" alt="Board Member Name">
+            <h3>Mr. Stephen Agyei</h3>
+            <p>Renewable Energy Engineer</p>
+        </div>
+        <div class="board-member">
+            <img src="../Assets/image/web/Team/Aikens.jpg" alt="Board Member Name">
+            <h3>Mr. Bernard Aikins</h3>
+            <p>Renewable Energy Engineer</p>
+        </div>
+        
+        
+        
+        <!-- Add more board members as needed -->
+    </div>
+</div>
+
+
+<!-- TEAM GROUP -->
+<section id="team" class="section-padding1 b-light">
+
+        <div class="container">
+                <div class="row">
+                        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="150">
+                                <div class="section-title">
+                                        <h1 class="display-4 fw-semibold">Team Members</h1>
+                                        <div class="line"></div>
+                                        <p>We work with qualified specialist that are desiplined, punctual and excellent at what they do.</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="row g-4 text-center">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                                <div class="team-member image-zoom">
+                                        <div class="image-zoom-wrapper">
+                                                <img src="../Assets/image/web/Team/team picture.jpg" alt="">
+                                        </div>
+                                        <div class="team-member-content">
+                                                <h4 class="text-white">Office Team</h4>
+                                        </div>
+                                </div>
+                        </div>
+      
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                                <div class="team-member image-zoom">
+                                        <div class="image-zoom-wrapper">
+                                                <img src="../Assets/image/web/Team/vision.jpg"  alt="">
+                                        </div>
+                                        <div class="team-member-content">
+                                                <h4 class="text-white">Field Team</h4>
+                                        </div>
+                                </div>
+                        </div>
+      
+                        
+                </div>
+        </div>
+      </section>
+
+     <!--FOOTER-->
+<footer class="bg-dark">
+        <div class="footer-top">
+                <div class="container">
+                        <div class="row gy-5">
+                                
+                        </div>
+                </div>
+        </div>
+        <div class="footer-bottom ">
+                <div class="container">
+                        <div class="row g-4 jusify-content-between">
+                                <div class="col-auto">
+                                        <p class="mb-0">© Copyright EEK Consults & Electricals. All Rights Reserved</p>
+                                </div>
+                                <div class="col-auto">
+                                        <p class="mb-0">Designed By <a href="#">AIDOO</a></p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    </footer>
+
+    <!--Script for dropdown-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const dropdowns = document.querySelectorAll('.nav-item.dropdown');
+  
+      dropdowns.forEach(dropdown => {
+          dropdown.addEventListener('mouseover', function() {
+              this.querySelector('.dropdown-menu').classList.add('show');
+          });
+          dropdown.addEventListener('mouseout', function() {
+              this.querySelector('.dropdown-menu').classList.remove('show');
+          });
+      });
+  });
+  
+
+    document.addEventListener('scroll', function() {
+        const parallaxElements = document.querySelectorAll('.parallax::before');
+  parallaxElements.forEach(el => {
+    const speed = 0.2; // Adjust for different speed relative to the scroll
+    el.style.transform = `translateY(${window.scrollY * speed}px)`;
+  });
+});
+
+$('#managementCarousel').hover(function () {
+    $(this).carousel('pause');
+}, function () {
+    $(this).carousel('cycle');
+});
+
+
+  </script>
+
+  <script src="../Assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
